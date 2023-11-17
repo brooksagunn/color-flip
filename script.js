@@ -19,11 +19,14 @@ const hexNums = [
   "F",
 ];
 
-console.log("reached");
-
 body.addEventListener("click", (e) => {
   e.stopPropagation();
-  body.style.backgroundColor = "blue";
-});
 
-console.log("reached");
+  let bgColor = "#";
+
+  while (bgColor.length <= 6) {
+    bgColor += hexNums[Math.floor(Math.random() * hexNums.length)];
+  }
+
+  body.style.backgroundColor = bgColor;
+});
