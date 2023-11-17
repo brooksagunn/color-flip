@@ -19,4 +19,11 @@ const hexNums = [
   "F",
 ];
 
-body.style.backgroundColor = "blue";
+console.log("reached");
+
+body.addEventListener("click", (e) => {
+  e.stopPropagation();
+  body.style.backgroundColor = "blue";
+});
+
+console.log("reached");
