@@ -1,4 +1,5 @@
-const body = document.getElementById("main");
+const body = document.body;
+const btn = document.getElementById("main");
 
 const hexNums = [
   "0",
@@ -19,7 +20,7 @@ const hexNums = [
   "F",
 ];
 
-body.addEventListener("click", (e) => {
+btn.addEventListener("click", (e) => {
   e.stopPropagation();
 
   let bgColor = "#";
