@@ -3,7 +3,32 @@ body {
   height: 100vh;
 }
 
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 button {
-  width: 40px;
-  height: 30px;
+  width: 350px;
+  height: 60px;
+
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 0;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.6) 0%,
+    rgba(9, 9, 121, 0.75) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+h2 {
+  text-align: center;
+  color: white;
 }
