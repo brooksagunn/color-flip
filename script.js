@@ -1,5 +1,6 @@
 const body = document.body;
 const btn = document.getElementById("main");
+const hexCaption = document.getElementById("hexCaption");
 
 const hexNums = [
   "0",
@@ -30,4 +31,5 @@ btn.addEventListener("click", (e) => {
   }
 
   body.style.backgroundColor = bgColor;
+  hexCaption.textContent = bgColor;
 });
